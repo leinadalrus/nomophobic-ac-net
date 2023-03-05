@@ -1,0 +1,19 @@
+[target.x86_64-unknown-linux-gnu]
+linker = "clang"
+rustflags = [
+    # Pre Link Args
+    "-Z", "pre-link-arg=/NOLOGO",
+    "-Z", "pre-link-arg=/NXCOMPAT",
+    "-Z", "pre-link-arg=/NODEFAULTLIB",
+    "-Z", "pre-link-arg=/SUBSYSTEM:NATIVE",
+    "-Z", "pre-link-arg=/DRIVER",
+    "-Z", "pre-link-arg=/DYNAMICBASE",
+    "-Z", "pre-link-arg=/MANIFEST:NO",
+
+    # Post Link Args
+    "-C", "link-arg=/OPT:REF,ICF",
+    "-C", "link-arg=/ENTRY:driver_entry",
+    "-C", "link-arg=/MERGE:.edata=.rdata",
+    "-C", "link-arg=/MERGE:.rustc=.data",
+    "-C", "link-arg=/INTEGRITYCHECK"
+]
