@@ -1,12 +1,12 @@
 [package]
-name = "oppaign-ac-net"
+name = "nomophobic-ac-net"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [lib]
-name = "oppaign_ac_net"
+name = "nomophobic_ac_net"
 crate-type = ["cdylib"] # Dynamic libary
 path = "./src/lib.rs"
 default-features = false
