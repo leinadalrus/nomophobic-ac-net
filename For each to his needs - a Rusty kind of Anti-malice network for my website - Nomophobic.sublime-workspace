@@ -1,0 +1,945 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"add_",
+				"add_system(…)"
+			],
+			[
+				"Pla",
+				"PlayerEntity"
+			],
+			[
+				"Rec",
+				"RectangleSpawn{}"
+			],
+			[
+				"rectan",
+				"rectangle_builder"
+			],
+			[
+				"rec",
+				"rectangle_walls"
+			],
+			[
+				"wall",
+				"wall_spawn_stack"
+			],
+			[
+				"wall_spaw",
+				"wall_spawn_entry_start"
+			],
+			[
+				"for",
+				"for_each(…)"
+			],
+			[
+				"ass",
+				"asset_name"
+			],
+			[
+				"action",
+				"audio_pause_action(…)"
+			],
+			[
+				"audio",
+				"audio_stop_action(…)"
+			],
+			[
+				"Mouse",
+				"MouseMotion (use bevy::input::mouse::MouseMotion)"
+			],
+			[
+				"track",
+				"TrackBuilder"
+			],
+			[
+				"Track",
+				"TrackHandle (use kira::track::TrackHandle)"
+			],
+			[
+				"add_s",
+				"add_system(…)"
+			],
+			[
+				"Appl",
+				"ApplicationProcessorPlugin"
+			],
+			[
+				"Camera2",
+				"Camera2dBundle"
+			],
+			[
+				"str",
+				"toString"
+			],
+			[
+				"head",
+				"Headers"
+			],
+			[
+				"type",
+				"typeof"
+			],
+			[
+				"e",
+				"eq(…) (as PartialEq)"
+			],
+			[
+				"Acc",
+				"AccountingError"
+			],
+			[
+				"Partia",
+				"PartialOrd"
+			],
+			[
+				"ac",
+				"AccountData"
+			],
+			[
+				"esta",
+				"establish_connection"
+			],
+			[
+				"strin",
+				"string_slice"
+			],
+			[
+				"println",
+				"println!(…)"
+			],
+			[
+				"App",
+				"AppConfigImpl_t"
+			],
+			[
+				"PROJ",
+				"PROJECT_NAME"
+			],
+			[
+				"pre",
+				"preTrainedConfig"
+			],
+			[
+				"Pre",
+				"PreTrainedConfig"
+			],
+			[
+				"ANI",
+				"ANIMATION_FRAME_DATA_H"
+			],
+			[
+				"Su",
+				"SutskeverEncoder"
+			],
+			[
+				"cat",
+				"categoryLines"
+			],
+			[
+				"Model",
+				"ModelRouter"
+			],
+			[
+				"comm",
+				"command_base_model"
+			],
+			[
+				"Dyn",
+				"DynamicEntity"
+			],
+			[
+				"NGX_HTTP_",
+				"NGX_HTTP_OK"
+			],
+			[
+				"ui",
+				"ui_command"
+			],
+			[
+				"Enve",
+				"EnvelopeDetectorParameter"
+			],
+			[
+				"PaDevi",
+				"PaDeviceInfo"
+			],
+			[
+				"Trio",
+				"TriodeClassAParameter"
+			],
+			[
+				"Two",
+				"TwoBandShelfParameter"
+			],
+			[
+				"TwoBand",
+				"TwoBandShelfParameter"
+			],
+			[
+				"Zav",
+				"ZavalishinFilter"
+			],
+			[
+				"solo",
+				"Soloud_destroy"
+			],
+			[
+				"Solo",
+				"Soloud_initEx"
+			],
+			[
+				"verst",
+				"verst_ctrl"
+			],
+			[
+				"cur",
+				"cursor_1"
+			],
+			[
+				"PaUtil_Advance",
+				"PaUtil_AdvanceRingBufferWriteIndex"
+			],
+			[
+				"ring",
+				"ring_buffer_size_t"
+			],
+			[
+				"ring_buff",
+				"ring_buffer_size_t"
+			],
+			[
+				"PaUtil_Gert",
+				"PaUtil_GetRingBufferWriteRegions"
+			],
+			[
+				"bu",
+				"bufferSize"
+			],
+			[
+				"Recd",
+				"RecordData"
+			],
+			[
+				"PaUtil_Adva",
+				"PaUtil_AdvanceRingBufferReadIndex"
+			],
+			[
+				"PaUti",
+				"PaUtil_GetRingBufferReadRegions"
+			],
+			[
+				"PaU",
+				"PaUtil_GetRingBufferReadAvailable"
+			],
+			[
+				"thread",
+				"thread_sync_flag"
+			],
+			[
+				"right",
+				"right_phase"
+			],
+			[
+				"left",
+				"left_phase"
+			],
+			[
+				"chann",
+				"channel_buffers"
+			],
+			[
+				"Destro",
+				"DestroySinusoid"
+			],
+			[
+				"Sin",
+				"SinusoidalWave"
+			],
+			[
+				"cty",
+				"cctype"
+			],
+			[
+				"inttyp",
+				"cinttypes"
+			],
+			[
+				"ra",
+				"raylib"
+			],
+			[
+				"In",
+				"Interface"
+			],
+			[
+				"Audio",
+				"AudioEffectController_Virtual_T"
+			],
+			[
+				"audi",
+				"audio_proc"
+			],
+			[
+				"aud",
+				"audio_proc"
+			],
+			[
+				"auditor",
+				"auditory_context"
+			],
+			[
+				"Inter",
+				"Interface"
+			],
+			[
+				"SAMPLE",
+				"SAMPLE_RATE"
+			],
+			[
+				"defaultout",
+				"defaultLowOutputLatency"
+			],
+			[
+				"ho",
+				"hostApiSpecificStreamInfo"
+			],
+			[
+				"output",
+				"outputParameters"
+			],
+			[
+				"Aut",
+				"AUTO"
+			],
+			[
+				"S",
+				"Soloud"
+			],
+			[
+				"N",
+				"Natant"
+			],
+			[
+				"Res",
+				"Result"
+			],
+			[
+				"de",
+				"def"
+			],
+			[
+				"reg",
+				"register_method"
+			],
+			[
+				"Sth",
+				"Sth_xss_k"
+			],
+			[
+				"cla",
+				"class"
+			],
+			[
+				"Dra",
+				"DragFloat"
+			],
+			[
+				"Low",
+				"LowpassInputHandle"
+			],
+			[
+				"sample",
+				"sampleFormat"
+			],
+			[
+				"sampl",
+				"sampleFormat"
+			],
+			[
+				"GetSample",
+				"Pa_GetSampleSize"
+			],
+			[
+				"STH",
+				"STH_XSS_K_CONTROLLER_H"
+			],
+			[
+				"Im",
+				"ImpuseResponseFilter"
+			],
+			[
+				"pro",
+				"procData"
+			],
+			[
+				"s",
+				"sth_xss_k_Natant"
+			],
+			[
+				"ImG",
+				"ImGuiIO"
+			],
+			[
+				"val",
+				"paramValue"
+			],
+			[
+				"va",
+				"paramValue"
+			],
+			[
+				"_",
+				"_ComponentView_DockSpace"
+			],
+			[
+				"_k",
+				"_k_sig_ent"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
+				"I",
+				"ImGui"
+			],
+			[
+				"is",
+				"is_p_ini_ran"
+			],
+			[
+				"EndMen",
+				"EndMenuBar"
+			],
+			[
+				"Men",
+				"BeginMenuBar"
+			],
+			[
+				"_View",
+				"_ViewUpdateCtrl_Widget"
+			],
+			[
+				"inot",
+				"inotify_event"
+			],
+			[
+				"ine",
+				"ineSA_ptr"
+			],
+			[
+				"def",
+				"define"
+			],
+			[
+				"ser",
+				"serverNames"
+			],
+			[
+				"Window",
+				"WindowBuilder"
+			],
+			[
+				"cst",
+				"cstdlib"
+			],
+			[
+				"string",
+				"string.h"
+			],
+			[
+				"ORIGI",
+				"ORIGIN_POINT_Y"
+			],
+			[
+				"ORI",
+				"ORIGIN_POINT_X"
+			],
+			[
+				"DIS",
+				"DISPLAY_HEIGHT"
+			],
+			[
+				"X",
+				"XZ2_PTR"
+			],
+			[
+				"YZ",
+				"YZ2_PTR"
+			],
+			[
+				"Y",
+				"YZ1_PTR"
+			],
+			[
+				"XZ",
+				"XZ2_PTR"
+			],
+			[
+				"_My",
+				"_MyLowpassDataPt"
+			],
+			[
+				"IIm",
+				"IImpulseResponseEvents"
+			],
+			[
+				"II",
+				"IImpulseResponseEvents"
+			],
+			[
+				"IIMp",
+				"IImpulseResponseParameter"
+			],
+			[
+				"L",
+				"LOWPASS_NO_1"
+			],
+			[
+				"IImpulseResp",
+				"IImpulseResponseParameter"
+			],
+			[
+				"freq",
+				"centrefrequency"
+			],
+			[
+				"IS",
+				"IS_IDEAL_FILTER_PROCESSING"
+			],
+			[
+				"f",
+				"FilterEvent"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"setting",
+				"Preferences: Settings"
+			],
+			[
+				"form",
+				"LSP: Format File"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"format",
+				"LSP: Format File"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"reloa",
+				"LSP-rust-analyzer: Reload Project"
+			],
+			[
+				"for",
+				"LSP: Format File"
+			],
+			[
+				"color",
+				"UI: Customize Color Scheme"
+			],
+			[
+				"forma",
+				"LSP: Format File"
+			],
+			[
+				"custom",
+				"UI: Customize Color Scheme"
+			],
+			[
+				"colo",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"cust",
+				"UI: Customize Color Scheme"
+			],
+			[
+				"the",
+				"UI: Select Theme"
+			],
+			[
+				"them",
+				"UI: Select Theme"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"lsp for",
+				"LSP: Format File"
+			],
+			[
+				"server",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"rest",
+				"LSP: Restart Server"
+			],
+			[
+				"resta",
+				"LSP: Restart Server"
+			],
+			[
+				"res",
+				"LSP: Restart Server"
+			],
+			[
+				"ter",
+				"Preferences: Terminus Settings"
+			],
+			[
+				"terminus",
+				"Terminus: List Shells"
+			],
+			[
+				"term",
+				"Preferences: Terminus Settings"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"packages",
+				"Package Control: Disable Package"
+			],
+			[
+				"restart",
+				"LSP: Restart Server"
+			],
+			[
+				"sett",
+				"Preferences: Settings"
+			],
+			[
+				"settin",
+				"Preferences: Settings"
+			],
+			[
+				"bar",
+				"Bookmarks: Toggle"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"pakca",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"prefe",
+				"Preferences: Settings"
+			],
+			[
+				"font",
+				"Set Syntax: Font"
+			],
+			[
+				"save p",
+				"Project: Save As"
+			],
+			[
+				"intall",
+				"Package Control: Install Package"
+			],
+			[
+				"build",
+				"Build: New Build System"
+			],
+			[
+				"Package",
+				"Package Control: List Packages"
+			],
+			[
+				"dia",
+				"LSP: Toggle Diagnostics Panel"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"wor",
+				"Word Wrap: Toggle"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"split",
+				"File: Split View"
+			],
+			[
+				"minima",
+				"View: Toggle Minimap"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 188.0,
+		"history":
+		[
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": true
+	},
+	"expanded_folders":
+	[
+		"/F/Projects/Repos/nomophobic-ac-net"
+	],
+	"file_history":
+	[
+		"/F/Projects/Repos/oppaign-avc/.infra/entrypoint.sh",
+		"/F/Projects/Repos/oppaign-avc/Cargo.toml",
+		"/F/Projects/Repos/oppaign-avc/src/main.rs",
+		"/F/Projects/Repos/oppaign-avc/.cargo/config.toml",
+		"/F/Sources/Repos/modulus-ponens-i18n/modulus-ponens/Cargo.toml",
+		"/F/Sources/Repos/dwy-vest/Dwy-Vest/Cargo.toml",
+		"/F/Sources/Repos/dwy-vest/Dwy-Vest/modulus-ponens/Cargo.toml",
+		"/F/Sources/Repos/dwy-vest/Dwy-Vest/src/main.rs",
+		"/F/Sources/Repos/dwy-vest/Dwy-Vest/src/controllers/route_index_controller.rs",
+		"/F/Sources/Repos/dwy-vest/Dwy-Vest/src/data/pg_client_interface.rs",
+		"/F/Sources/Repos/dwy-vest/Dwy-Vest/src/database/pg_client_interface.rs",
+		"/F/Sources/Repos/dwy-vest/Dwy-Vest/src/database/mod.rs",
+		"/F/Sources/Repos/dwy-vest/Dwy-Vest/src/controllers/mod.rs",
+		"/F/Sources/Repos/dwy-vest/Cargo.toml",
+		"/F/Sources/Repos/dwy-vest/rust-toolchain.toml",
+		"/F/Users/Amstel/sources/repos/dwy-wey/src/main.rs",
+		"/F/Users/Amstel/sources/repos/dwy-wey/src/lib.rs",
+		"/F/Users/Amstel/sources/repos/dwy-wey/src/bin/websys_worker_hydrate.rs"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 544.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 49.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.LSP Log Panel":
+	{
+		"height": 0.0
+	},
+	"output.diagnostics":
+	{
+		"height": 184.0
+	},
+	"output.exec":
+	{
+		"height": 134.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.language servers":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.sbt":
+	{
+		"height": 0.0
+	},
+	"output.sbt_error":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "For each to his needs - a Rusty kind of Anti-malice network for my website - Nomophobic.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"F:\\Sources\\Repos\\modulus-ponens-i18n\\Your local input - internationalizations for your love - Modulus-Ponens-i18n.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 354.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 560.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 218.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
