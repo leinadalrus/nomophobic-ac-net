@@ -17,6 +17,15 @@ plugin = false
 proc-macro = false
 harness = true
 
+[[bin]]
+name = "arc_collection_processor"
+path = "src/bin/arc_collection_processor"
+
+[[bin]]
+name = "mod"
+path = "src/bin/mod.rs"
+
+
 [dependencies]
 clap = "4.1.8"
 libm = { default-features = false, version = "0.2.6" }

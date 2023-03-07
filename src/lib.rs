@@ -1,6 +1,7 @@
 #![feature(error_in_core)]
 #![feature(core_intrinsics)]
 #![feature(lang_items)]
+#![allow(unused_must_use)]
 
 extern crate alloc;
 extern crate core;
@@ -161,13 +162,18 @@ pub fn main(mut module_context: ModuleContext) -> NeonResult<()> {
         Box::<WorkerHandlerOutput>::new(WorkerHandlerOutput {
             output: String::from("Hello, World!"),
         });
-    module_context.export_function(
-        &working_handle_out.output,
-        setup_worker_handles_exporting,
-    );
+
+    match module_context.try_string(&working_handle_out.output) {
+        Ok(/* JsString */_) => module_context.export_function(
+            &working_handle_out.output,
+            setup_worker_handles_exporting,
+        ),
+        Err(_) => panic!("Error(s) has Occurred in Module Context and Result [!]"),
+    };
 
     exec(); // TODO(Option): Option => Some | None | _ -> Result
-    
+
     Ok(())
 }
-// TODO(Daniel): Shared Immutable := Singleton design pattern with Strategy design pattern
+// TODO(Daniel): Shared Immutable := Singleton design pattern with Strategy
+// design pattern
