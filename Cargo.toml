@@ -17,11 +17,18 @@ plugin = false
 proc-macro = false
 harness = true
 
+[[bin]]
+name = "websys_handle_ctl"
+path = "src/bin/websys_handle_ctl"
+
+[[bin]]
+name = "mod"
+path = "src/bin/mod.rs"
+
 
 [dependencies]
 clap = "4.1.8"
 libm = { default-features = false, version = "0.2.6" }
-neon = "0.10.1"
 reqwest = { version = "0.11.8", features = ["blocking", "cookies", "json"] }
 rocket = { version = "0.5.0-rc.2", features = ["json"] }
 serde = { version = "1.0.132", features = ["derive"] }
@@ -34,7 +41,15 @@ sqlx = { version = "0.6", features = [ "runtime-tokio-native-tls" , "postgres" ]
 tokio = { version = "1", features = ["full"] }
 wasm-bindgen = { version = "0.2.51", features = ["serde-serialize"]  }
 wasm-bindgen-futures = "0.4.1"
+web-sys = { version = "0.3", features = [ "HtmlInputElement" ] }
 winreg = "0.11.0"
+yew = { version = "0.20.0", features = ["csr"] }
+yew-agent = "0.2.0"
+
+[dependencies.neon]
+version = "0.10.1"
+default-features = false
+features = ["channel-api", "napi-6", "promise-api", "task-api"]
 
 [dependencies.windows]
 version = "0.44.0"
@@ -47,9 +62,16 @@ features = [
     "Win32_UI_WindowsAndMessaging",
 ]
 
+[features]
+hydration = ["yew/hydration"]
+ssr = ["yew/ssr"]
+
 [profile.dev]
 panic = "abort"
 opt-level = 2
+
+[profile.dev.package.sqlx-macros]
+opt-level = 3
 
 [profile.release]
 codegen-units = 1

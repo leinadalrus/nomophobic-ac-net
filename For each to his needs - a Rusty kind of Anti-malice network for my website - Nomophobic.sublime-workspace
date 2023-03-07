@@ -519,6 +519,17 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "src/lib.rs",
+			"settings":
+			{
+				"buffer_size": 1974,
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+			]
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -765,10 +776,12 @@
 	},
 	"expanded_folders":
 	[
-		"/F/Projects/Repos/nomophobic-ac-net"
+		"/F/Projects/Repos/nomophobic-ac-net",
+		"/F/Projects/Repos/nomophobic-ac-net/src"
 	],
 	"file_history":
 	[
+		"/F/Projects/Repos/nomophobic-ac-net/Cargo.toml",
 		"/F/Projects/Repos/oppaign-avc/.infra/entrypoint.sh",
 		"/F/Projects/Repos/oppaign-avc/Cargo.toml",
 		"/F/Projects/Repos/oppaign-avc/src/main.rs",
@@ -825,6 +838,54 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/lib.rs",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1974,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								247,
+								247
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".:",
+									"selector": "source.rust"
+								},
+								{
+									"characters": ":.'(",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "rust-analyzer"
+								}
+							],
+							"lsp_active": true,
+							"lsp_hover_provider_count": 1,
+							"lsp_uri": "file:///F:/Projects/Repos/nomophobic-ac-net/src/lib.rs",
+							"show_definitions": false,
+							"syntax": "Packages/Rust Enhanced/RustEnhanced.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 375.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
 			]
 		}
 	],

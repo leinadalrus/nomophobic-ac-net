@@ -11,20 +11,26 @@ use windows::{
     Win32::System::{Com::*, Threading::CreateThreadpoolWork},
 };
 
-extern "C" fn system_callback_panic(_argc: i8, _argv: *const *const u8) -> ! {
+extern "C" fn system_callback_panic(
+    _argc: usize, _argv: *const *const u32,
+) -> ! {
     if _argc >= 1 {
         unsafe {
-            match **_argv.offset(1) as char {
-                '1' => assert!(std::process::Command::new(
-                    "cd $(ls | grep -r 'entrypoint.sh' ./); ./entrypoint.sh; ./entrypoint.sh init"
+            match char::from_u32(**_argv) {
+                Some('1') => assert!(std::process::Command::new(
+                    "cd $(ls | grep -r 'entrypoint.sh' ./); ./entrypoint.sh; \
+                     ./entrypoint.sh init"
                 )
                 .spawn()
                 .is_ok()),
-                '2' => assert!(std::process::Command::new(
+                Some('2') => assert!(std::process::Command::new(
                     "npm i; npm build; npm run"
                 )
                 .spawn()
                 .is_ok()),
+                None => {
+                    panic!("echo Error has Occurred in Command Processes...[!]")
+                }
                 _ => panic!(),
             }
         }
