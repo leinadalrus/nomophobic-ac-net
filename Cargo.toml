@@ -17,15 +17,6 @@ plugin = false
 proc-macro = false
 harness = true
 
-[[bin]]
-name = "websys_handle_ctl"
-path = "src/bin/websys_handle_ctl"
-
-[[bin]]
-name = "mod"
-path = "src/bin/mod.rs"
-
-
 [dependencies]
 clap = "4.1.8"
 libm = { default-features = false, version = "0.2.6" }
