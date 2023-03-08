@@ -11,11 +11,13 @@ struct ArcWorkerHandler {
     link: WorkerLink<Self>,
 }
 
-struct ArcWorkerHandlerInput {
+#[derive(Deserialize, Serialize)]
+pub struct ArcWorkerHandlerInput {
     input: String,
 }
 
-struct ArcWorkerHandlerOutput {
+#[derive(Deserialize, Serialize)]
+pub struct ArcWorkerHandlerOutput {
     output: String,
 }
 
@@ -23,13 +25,31 @@ impl yew_agent::Worker for ArcWorkerHandler {
     type Input = ArcWorkerHandlerInput;
     type Message = ();
     type Output = ArcWorkerHandlerOutput;
-    type Reach = Public<Self>;
+    type Reach = Public<ArcWorkerHandler>;
 
     fn create(link: WorkerLink<Self>) -> Self { return Self { link }; }
 
-    fn update(&mut self, message: Self::Message) {}
+    fn update(&mut self, message: Self::Message) {
+        let shared_immutable = ArcWorkerHandlerInput {
+            input: Self::name_of_resource().to_owned(),
+        };
+        if let state = Self::resource_path_is_relative() {
+            match state {
+                true => println!("resource_path_is_relative == true ? !false : 1"),
+                false => panic!("resource_path_is_relative != true ? false : 0"),
+                _ => (),
+            }
 
-    fn connected(&mut self, _id: HandlerId) {} // use regex to fetch uri of api
+            match shared_immutable {
+                ArcWorkerHandlerInput => println!("name_of_resource().to_owned() == true ? !false : 1"),
+                _ => (),
+            } // regex match state => shared_immutable.input => Result<()>
+        }
+    }
+
+    fn connected(&mut self, _id: HandlerId) {}
+
+    // use regex to fetch uri of api
 
     fn handle_input(&mut self, msg: Self::Input, id: HandlerId) {
         // this runs in a web worker
@@ -63,12 +83,5 @@ impl yew_agent::Worker for ArcWorkerHandler {
 }
 
 fn main() -> std::result::Result<(), std::boxed::Box<dyn std::error::Error>> {
-    if let state = std::option::Option<ArcWorkerHandlerInput, std::error::Error>::new() {
-        match state {
-            Ok(state) => println!("State is Ok!"),
-            Err(_) => panic!("An error has occurred in a singleton!")
-        }
-    }
-
     Ok(())
 }
