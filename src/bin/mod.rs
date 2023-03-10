@@ -1,4 +1,4 @@
-mod arc_collection_processor;
+pub mod arc_collection_processor;
 
 #[cfg(test)]
 pub mod tests {

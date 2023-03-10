@@ -523,7 +523,7 @@
 			"file": "src/lib.rs",
 			"settings":
 			{
-				"buffer_size": 1974,
+				"buffer_size": 4921,
 				"line_ending": "Unix"
 			},
 			"undo_stack":
@@ -845,15 +845,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1974,
+						"buffer_size": 4921,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								247,
-								247
+								274,
+								274
 							]
 						],
 						"settings":
@@ -863,15 +863,9 @@
 								{
 									"characters": ".:",
 									"selector": "source.rust"
-								},
-								{
-									"characters": ":.'(",
-									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
-									"server": "rust-analyzer"
 								}
 							],
-							"lsp_active": true,
-							"lsp_hover_provider_count": 1,
+							"lsp_hover_provider_count": 3,
 							"lsp_uri": "file:///F:/Projects/Repos/nomophobic-ac-net/src/lib.rs",
 							"show_definitions": false,
 							"syntax": "Packages/Rust Enhanced/RustEnhanced.sublime-syntax",
@@ -879,7 +873,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 375.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

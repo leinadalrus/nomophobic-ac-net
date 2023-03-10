@@ -1,24 +1,18 @@
-use neon::{
-    context::Context,
-    prelude::{FunctionContext, ModuleContext},
-    result::{JsResult, NeonResult},
-    types::JsString,
-};
 use serde::{Deserialize, Serialize};
 use yew_agent::{HandlerId, Public, WorkerLink};
 
-struct ArcWorkerHandler {
-    link: WorkerLink<Self>,
+pub struct ArcWorkerHandler {
+    pub link: WorkerLink<Self>,
 }
 
 #[derive(Deserialize, Serialize)]
 pub struct ArcWorkerHandlerInput {
-    input: String,
+    pub input: String,
 }
 
 #[derive(Deserialize, Serialize)]
 pub struct ArcWorkerHandlerOutput {
-    output: String,
+    pub output: String,
 }
 
 impl yew_agent::Worker for ArcWorkerHandler {
@@ -27,24 +21,27 @@ impl yew_agent::Worker for ArcWorkerHandler {
     type Output = ArcWorkerHandlerOutput;
     type Reach = Public<ArcWorkerHandler>;
 
-    fn create(link: WorkerLink<Self>) -> Self { return Self { link }; }
+    fn create(_link: WorkerLink<Self>) -> Self { return Self { link: _link }; }
 
-    fn update(&mut self, message: Self::Message) {
+    fn update(&mut self, _message: Self::Message) {
         let shared_immutable = ArcWorkerHandlerInput {
             input: Self::name_of_resource().to_owned(),
         };
-        if let state = Self::resource_path_is_relative() {
-            match state {
-                true => println!("resource_path_is_relative == true ? !false : 1"),
-                false => panic!("resource_path_is_relative != true ? false : 0"),
-                _ => (),
-            }
 
-            match shared_immutable {
-                ArcWorkerHandlerInput => println!("name_of_resource().to_owned() == true ? !false : 1"),
-                _ => (),
-            } // regex match state => shared_immutable.input => Result<()>
+        let state = Self::resource_path_is_relative();
+
+        match state {
+            true => println!("resource_path_is_relative == true ? !false : 1"),
+            false => panic!("resource_path_is_relative != true ? false : 0"),
+            _ => (),
         }
+
+        match shared_immutable {
+            ArcWorkerHandlerInput { input: _message } => {
+                println!("name_of_resource().to_owned() == true ? !false : 1")
+            }
+            _ => (),
+        } // regex match state => shared_immutable.input => Result<()>
     }
 
     fn connected(&mut self, _id: HandlerId) {}

@@ -19,7 +19,7 @@ harness = true
 
 [[bin]]
 name = "arc_collection_processor"
-path = "src/bin/arc_collection_processor"
+path = "src/bin/arc_collection_processor.rs"
 
 [[bin]]
 name = "mod"
