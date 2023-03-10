@@ -22,6 +22,10 @@ name = "arc_collection_processor"
 path = "src/bin/arc_collection_processor.rs"
 
 [[bin]]
+name = "signal_usage_observer"
+path = "src/bin/signal_usage_observer.rs"
+
+[[bin]]
 name = "mod"
 path = "src/bin/mod.rs"
 

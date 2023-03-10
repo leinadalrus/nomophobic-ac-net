@@ -1,4 +1,5 @@
 pub mod arc_collection_processor;
+pub mod signal_usage_observer;
 
 #[cfg(test)]
 pub mod tests {
