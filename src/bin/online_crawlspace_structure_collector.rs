@@ -12,6 +12,7 @@ use tokio::sync::Barrier;
 
 pub struct NetworkDomainOperators;
 pub struct NetworkDomainDorks;
+pub struct SearchEngine;
 
 #[rocket::async_trait]
 pub trait CrawlerHandler {
@@ -28,6 +29,41 @@ pub trait CrawlerHandler {
     fn process(
         &self, item: Self::Item,
     ) -> std::result::Result<(), std::boxed::Box<dyn std::error::Error>>;
+}
+
+impl CrawlerHandler for SearchEngine {
+    type Item: std::fmt::Debug + Clone;
+
+    // maybe trait Sized would do better than Debug?
+
+    fn name(&self) -> String {
+        "".to_owned()
+    }
+
+    fn url(&self) -> Vec<String> {
+        vec!["".to_owned()]
+    }
+
+    fn scrape(
+        &self, url: &str,
+    ) -> std::result::Result<
+        (Vec<Self::Item>, Vec<String>),
+        std::boxed::Box<dyn std::error::Error>,
+    > {
+    }
+
+    fn process(
+        &self, item: Self::Item,
+    ) -> std::result::Result<(), std::boxed::Box<dyn std::error::Error>> {
+        Ok(())
+    }
+}
+
+impl SearchEngine {
+    pub async fn init<T: Send + 'static>(
+        &self, crawler: Arc<dyn CrawlerHandler<Item = T>>,
+    ) {
+    }
 }
 
 fn window() -> web_sys::Window {
