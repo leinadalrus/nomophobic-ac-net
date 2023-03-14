@@ -22,7 +22,7 @@ pub struct Body(pub String);
 pub struct Forms(pub String);
 
 #[derive(Debug, Clone)]
-pub struct ElementData<T> {
+pub struct DocumentStructure<T> {
     element: T,
     window: Window,
     document: Document,
@@ -43,7 +43,7 @@ pub trait CrawlerHandler<Item> {
     ) -> std::result::Result<(), std::boxed::Box<dyn std::error::Error>>;
 }
 
-impl<Item> CrawlerHandler<Item> for ElementData<Item> {
+impl<Item> CrawlerHandler<Item> for DocumentStructure<Item> {
     fn name(&self) -> String { "".to_owned() }
 
     fn url(&self) -> Vec<String> { vec!["".to_owned()] }
@@ -53,6 +53,7 @@ impl<Item> CrawlerHandler<Item> for ElementData<Item> {
     ) -> Result<(&Item, std::string::String), Box<(dyn std::error::Error + 'static)>> {
         let t = &self.element;
         let s = self.url().into_iter().collect();
+
         Ok((t, s))
     }
 
