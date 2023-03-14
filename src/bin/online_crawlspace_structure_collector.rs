@@ -118,7 +118,7 @@ impl<X> DocumentCrawler<X> {
                 // no more work, we leave
                 break;
             }
-            tokio::time::sleep(std::time::Duration::from_millis(8))/* .await */;
+            // tokio::time::sleep(std::time::Duration::from_millis(8))/* .await */;
         }
     }
 }
