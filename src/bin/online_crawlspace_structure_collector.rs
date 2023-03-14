@@ -11,21 +11,24 @@ use std::{
 use tokio::sync::Barrier;
 
 #[derive(Debug, Clone)]
-pub struct Site(pub String);
+pub struct Window(pub String);
 #[derive(Debug, Clone)]
-pub struct InTitle(pub String);
+pub struct Document(pub String);
 #[derive(Debug, Clone)]
-pub struct InText(pub String);
+pub struct Head(pub String);
 #[derive(Debug, Clone)]
-pub struct InUrl(pub String);
+pub struct Body(pub String);
+#[derive(Debug, Clone)]
+pub struct Forms(pub String);
 
 #[derive(Debug, Clone)]
-pub struct SearchData<T> {
-    t: T,
-    site: Site,
-    intitle: InTitle,
-    intext: InText,
-    inurl: InUrl,
+pub struct ElementData<T> {
+    element: T,
+    window: Window,
+    document: Document,
+    head: Head,
+    body: Body,
+    forms: Forms,
 }
 
 #[rocket::async_trait]
@@ -40,7 +43,7 @@ pub trait CrawlerHandler<Item> {
     ) -> std::result::Result<(), std::boxed::Box<dyn std::error::Error>>;
 }
 
-impl<Item> CrawlerHandler<Item> for SearchData<Item> {
+impl<Item> CrawlerHandler<Item> for ElementData<Item> {
     fn name(&self) -> String { "".to_owned() }
 
     fn url(&self) -> Vec<String> { vec!["".to_owned()] }
@@ -48,7 +51,7 @@ impl<Item> CrawlerHandler<Item> for SearchData<Item> {
     fn scrape(
         &self, url: &str,
     ) -> Result<(&Item, std::string::String), Box<(dyn std::error::Error + 'static)>> {
-        let t = &self.t;
+        let t = &self.element;
         let s = self.url().into_iter().collect();
         Ok((t, s))
     }
